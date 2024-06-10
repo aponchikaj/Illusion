@@ -53,6 +53,12 @@ export class PostersService {
       price:15,
       img:'../../assets/Posters/aphex.png'
     },
+    {
+      id:9,
+      name:'Die Antwoord.',
+      price:15,
+      img:'../../assets/Posters/die antwoord.png'
+    },
   ]
   constructor() { }
 }
