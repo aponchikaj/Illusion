@@ -47,6 +47,12 @@ export class PostersService {
       price:15,
       img:'../../assets/Posters/ისევ ილუზიაში.png'
     },
+    {
+      id:8,
+      name:'Aphex Twin.',
+      price:15,
+      img:'../../assets/Posters/aphex.png'
+    },
   ]
   constructor() { }
 }
