@@ -59,6 +59,12 @@ export class PostersService {
       price:15,
       img:'../../assets/Posters/die antwoord.png'
     },
+    {
+      id:10,
+      name:'MF DOOM',
+      price:15,
+      img:'../../assets/Posters/MFDOOM.png'
+    },
   ]
   constructor() { }
 }
