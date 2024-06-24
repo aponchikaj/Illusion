@@ -65,6 +65,12 @@ export class PostersService {
       price:15,
       img:'../../assets/Posters/MFDOOM.png'
     },
+    {
+      id:11,
+      name:'MISFITS',
+      price:12,
+      img:'../../assets/Posters/Misfits Poster.png'
+    },
   ]
   constructor() { }
 }

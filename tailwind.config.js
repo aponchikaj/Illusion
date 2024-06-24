@@ -8,7 +8,8 @@ module.exports = {
       fontFamily:{
         ALK:'ALK',
         K2D:'k2d',
-        geo:'geo'
+        geo:'geo',
+        glaho:'glaho'
       }
     },
   },
