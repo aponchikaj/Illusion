@@ -71,6 +71,18 @@ export class PostersService {
       price:12,
       img:'../../assets/Posters/Misfits Poster.png'
     },
+    {
+      id:12,
+      name:'Sex Pistols',
+      price:15,
+      img:'../../assets/Posters/sEQsis pistoleti Poster.png'
+    },
+    {
+      id:13,
+      name:'Die Antwoord',
+      price:15,
+      img:'../../assets/Posters/antwoord2.png'
+    },
   ]
   constructor() { }
 }
