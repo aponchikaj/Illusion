@@ -85,22 +85,10 @@ export class PostersService {
     },
     {
       id:14,
-      name:'Lifelover',
+      name:'Grimes',
       price:15,
-      img:'../../assets/Posters/lifelover.png'
-    },
-    {
-      id:15,
-      name:'Grausamkeit',
-      price:15,
-      img:'../../assets/Posters/grausamkeit.png'
-    },
-    {
-      id:16,
-      name:'Psychonaut 4',
-      price:15,
-      img:'../../assets/Posters/p4.png'
-    },
+      img:'../../assets/Posters/grimes Poster.png'
+    }
   ]
   constructor() { }
 }
