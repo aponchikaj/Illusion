@@ -94,7 +94,19 @@ export class PostersService {
       name:"World Won't exist Without MUSIC",
       price:15,
       img:'../../assets/Posters/existt.png'
-    }
+    },
+    {
+      id:16,
+      name:"Radiohead",
+      price:15,
+      img:'../../assets/Posters/ratiohead123123.png'
+    },
+    {
+      id:17,
+      name:"Slowdive",
+      price:15,
+      img:'../../assets/Posters/Slowdive.png'
+    },
   ]
   constructor() { }
 }
