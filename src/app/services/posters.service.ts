@@ -88,6 +88,12 @@ export class PostersService {
       name:'Grimes',
       price:15,
       img:'../../assets/Posters/grimes Poster.png'
+    },
+    {
+      id:15,
+      name:"World Won't exist Without MUSIC",
+      price:15,
+      img:'../../assets/Posters/existt.png'
     }
   ]
   constructor() { }
