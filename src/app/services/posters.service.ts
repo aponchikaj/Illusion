@@ -107,6 +107,12 @@ export class PostersService {
       price:15,
       img:'../../assets/Posters/Slowdive.png'
     },
+    {
+      id:18,
+      name:"Duster",
+      price:15,
+      img:'../../assets/Posters/Duster.png'
+    },
   ]
   constructor() { }
 }
