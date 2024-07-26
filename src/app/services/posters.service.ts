@@ -12,6 +12,12 @@ export class PostersService {
       img:'../../assets/Posters/angrev.png'
     },
     {
+      id:19,
+      name:"Falling Down",
+      price:15,
+      img:'../../assets/Posters/FallingdownA.png'
+    },
+    {
       id:2,
       name:'დაანგრიე ილუზია',
       price:15,
