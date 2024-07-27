@@ -119,6 +119,12 @@ export class PostersService {
       price:15,
       img:'../../assets/Posters/Duster.png'
     },
+    {
+      id:20,
+      name:"Lily Chou-chou",
+      price:15,
+      img:'../../assets/Posters/chouchou.png'
+    },
   ]
   constructor() { }
 }
