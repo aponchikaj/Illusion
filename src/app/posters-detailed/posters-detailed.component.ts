@@ -1,8 +1,9 @@
-import { parseTemplate } from '@angular/compiler';
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PostersService } from '../services/posters.service';
-import { delimiter } from 'path';
+import { APIService } from '../API/api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-posters-detailed',
@@ -11,7 +12,7 @@ import { delimiter } from 'path';
 })
 export class PostersDetailedComponent implements OnInit{
 
-  constructor(private route : ActivatedRoute, private list: PostersService){}
+  constructor(private route : ActivatedRoute, private list: PostersService,private api:APIService,private router:Router){}
 
   poster:any;
   posterID:any
@@ -21,7 +22,7 @@ export class PostersDetailedComponent implements OnInit{
   sabachka:string = '@'
   AddingMoney:number = 0
 
-  Phone:number = 0
+  Phone:string = ''
   Instagram:string = ''
   DeliveryMethod = ''
   PaymentMethod = ''
@@ -34,6 +35,32 @@ export class PostersDetailedComponent implements OnInit{
     this.posterID = this.route.snapshot.paramMap.get('id');
     let mainID = parseInt(this.posterID)
     this.poster = this.list.PostersINFO.find((p)=>p.id===mainID)
+  }
+
+  ChangeDelivery(){
+    if(this.DeliveryMethod == 'Metro'){
+      this.price = 20
+    }else if(this.DeliveryMethod == 'Home'){
+      this.price = 25
+    }
+  }
+
+  Order(){
+    const Data={
+      Phone:this.Phone,
+      Instagram:this.Instagram,
+      DeliveryMethod:this.DeliveryMethod,
+      PaymentMethod:this.PaymentMethod,
+      Address:this.Mdebareoba,
+      Price:this.price
+    }
+
+    this.api.sendOrder(Data).subscribe((R)=>{
+      this.Message = R.Message
+      if(R.Success == true){
+        this.router.navigateByUrl('/Success')
+      }
+    })
   }
   
 }

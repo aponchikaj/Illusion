@@ -53,6 +53,18 @@ export class PostersService {
       price:15,
       img:'../../assets/Posters/kanye Poster.png'
     },
+    {
+      id:9,
+      name:"დაანგრიე ილუზია",
+      price:15,
+      img:'../../assets/Posters/daangrieiluziayvavilit.png'
+    },
+    {
+      id:10,
+      name:"Kendrick Lamar",
+      price:15,
+      img:'../../assets/Posters/KendrickPoster.png'
+    },
   ]
   constructor() { }
 }

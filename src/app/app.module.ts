@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PostersDetailedComponent } from './posters-detailed/posters-detailed.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
+import { SuccessComponent } from './success/success.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -31,7 +32,8 @@ const routes: Routes = [
     HeaderComponent,
     PageNotFoundComponent,
     FooterComponent,
-    PostersDetailedComponent
+    PostersDetailedComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
