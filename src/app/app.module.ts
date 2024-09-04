@@ -11,6 +11,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { RouterModule, Routes } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { PostersDetailedComponent } from './posters-detailed/posters-detailed.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -34,10 +36,13 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideHttpClient(withFetch())
   ],
   bootstrap: [AppComponent]
 })
