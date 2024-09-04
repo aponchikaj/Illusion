@@ -41,6 +41,18 @@ export class PostersService {
       price:15,
       img:'../../assets/Posters/Slowdive.png'
     },
+    {
+      id:7,
+      name:"Travis Sccott",
+      price:15,
+      img:'../../assets/Posters/travis poster.png'
+    },
+    {
+      id:8,
+      name:"Kanye West",
+      price:15,
+      img:'../../assets/Posters/kanye Poster.png'
+    },
   ]
   constructor() { }
 }
