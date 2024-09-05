@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class APIService {
 
-  OrderAPI:string = 'illusionbackend-production.up.railway.app/Order'
+  OrderAPI:string = 'https://illusionbackend.onrender.com/Order'
 
   constructor(private http:HttpClient) { }
 
