@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class APIService {
 
-  OrderAPI:string = 'http://localhost:3000/api/order'
+  OrderAPI:string = 'https://illusion-backend-mu.vercel.app/api/order'
 
   constructor(private http:HttpClient) { }
 
