@@ -14,6 +14,7 @@ import { PostersDetailedComponent } from './posters-detailed/posters-detailed.co
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { SuccessComponent } from './success/success.component';
+import { APIService } from './API/api.service';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -44,7 +45,8 @@ const routes: Routes = [
   ],
   providers: [
     provideClientHydration(),
-    provideHttpClient(withFetch())
+    provideHttpClient(withFetch()),
+    APIService
   ],
   bootstrap: [AppComponent]
 })

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class APIService {
 
-  OrderAPI:string = 'https://illusionbackend.onrender.com/Order'
+  OrderAPI:string = 'http://localhost:3000/api/order'
 
   constructor(private http:HttpClient) { }
 
