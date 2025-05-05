@@ -1,0 +1,25 @@
+.navbarAnim{
+    animation: anim;
+    animation-duration: 0.5s;
+}
+
+.MenuModeAnim{
+    animation: Menuanim;
+    animation-duration: 0.5s;
+}
+
+@keyframes anim {
+    0%{
+        transform: translateY(-50vh);
+    }100%{
+        transform: translateY(0vh);
+    }
+}
+
+@keyframes Menuanim {
+    0%{
+        transform: translateX(-50vh);
+    }100%{
+        transform: translateX(0vh);
+    }
+}

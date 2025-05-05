@@ -1,0 +1,62 @@
+<main class="h-auto md:h-[100vh] bg-[#292929] w-full overflow-x-hidden">
+    <section class="flex w-full h-auto md:h-[100vh]">
+        <section class="flex flex-col text-start items-center justify-start p-[10px] w-full md:flex-row md:justify-around md:items-center">
+            <section class="mt-[30px] w-[220px] md:w-[280px] lg:w-[330px] transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300">
+                <img src="{{poster.img}}" alt="image">
+            </section>
+            
+            <section    >
+
+                <section class="my-[20px] flex justify-center flex-col items-center text-white font-K2D">
+                    <h1 class="text-2xl">{{poster.name}}</h1>
+                    <h3 class="text-xl">{{poster.price}} ₾</h3>
+                </section>
+                <hr>
+                <form class="my-[20px] flex flex-col items-center md:items-start text-center md:text-start"> 
+                    <section class="mb-[10px] flex justify-center text-white font-K2D md:text-start md:justify-center">
+                        <p class="w-1/2">{{Message}}</p>
+                    </section>
+                    <section class="my-[10px] flex flex-col w-full">
+                        <label class="text-white font-K2D">Instagram: <span class="text-[#cccccc] opacity-60">{{sabachka}}</span></label>
+                        <input type="text" class="p-[10px] outline-none rounded-[3px]" name="Instagram" [(ngModel)]="Instagram" required>
+                    </section>
+                    <section class="flex flex-col w-full">
+                        <label class="text-white font-K2D">Phone: <span class="text-[#cccccc] opacity-60">+995</span></label>
+                        <input type="text" class="p-[10px] outline-none rounded-[3px]" name="Phone" [(ngModel)]="Phone" required placeholder="+995">
+                    </section>
+                    <section class="my-[10px] flex flex-col md:items-center w-full">
+                        <label class="text-white font-K2D">Delivery Method</label>
+                        <select class="w-full p-[10px] flex rounded-[3px] mx-auto" name="DeliveryMethod" [(ngModel)]="DeliveryMethod" required (change)="ChangeDelivery()">
+                            <option value="Metro" ngValue="Metro" class="block w-full">Metro +5 GEL</option>
+                            <option value="Home" ngValue="Metro" class="block w-full" >Home +10 GEL</option>
+                        </select>
+                        <section class="flex flex-col" *ngIf="DeliveryMethod === 'Metro'?true:false">
+                            <label class="text-white font-K2D">Metro Station</label>
+                            <input type="text" class="p-[10px] outline-none rounded-[3px]" name="mdebareoba" [(ngModel)]="Mdebareoba" required>
+                        </section>
+                        <section class="flex flex-col" *ngIf="DeliveryMethod == 'Home'?true:false">
+                            <label class="text-white font-K2D">Address</label>
+                            <input type="text" class="p-[10px] outline-none rounded-[3px]" required name="mdebareoba" [(ngModel)]="Mdebareoba">
+                        </section>
+                    </section>
+
+                    <section class="my-[10px] flex flex-col items-center w-full">
+                        <label class="text-white font-K2D">Payment Method</label>
+                        <select name="PaymentMethod" class="w-full p-[10px] rounded-[3px] " id="PaymentMethod" [(ngModel)]="PaymentMethod"  required> 
+                            <option value="Cash" class="block w-full">Cash</option>
+                            <option value="Card" class="block w-full">Card</option>
+                        </select>
+                    </section>
+
+                    <section class="w-full flex flex-col justify-center items-center my-[10px]">
+                        <p class="text-white text-xl md:text-lg font-K2D my-[10px]" *ngIf="DeliveryMethod == 'Metro'?price+5:price+10">Price: {{price}}</p>
+                        <button (click)="Order()" class="border rounded-[2px] border-[#cccccc] p-[10px] font-K2D text-white text-xl duration-300 ease-in=out hover:scale-110 hover:shadow-2xl" type="submit">Submit</button>
+                    </section>
+                </form>
+
+            </section>
+
+        </section>
+
+    </section>
+</main>

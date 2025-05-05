@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'ALK';
+  src: url(./assets/Fonts/alkdots-webfont.ttf);
+}
+@font-face {
+  font-family: 'k2d';
+  src: url(./assets/Fonts/K2D-Regular.ttf)
+}
+@font-face {
+  font-family: 'geo';
+  src: url('./assets/Fonts/alk-rex-bold-webfont.ttf');
+}
+@font-face {
+  font-family: 'glaho';
+  src: url('./assets/Fonts/mg-glaho-drunk-webfont.ttf');
+}

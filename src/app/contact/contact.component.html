@@ -1,0 +1,26 @@
+<main class="h-[90vh] bg-[#292929] w-full">
+    <section class="w-full h-[90vh] flex flex-col md:flex-row gap-7 justify-center items-center text-white">
+
+        <section class="text-center flex flex-col text-center items-center md:text-start md:items-start">
+            <h1 class="font-K2D text-[20px] md:text-[25px]">Send me a Message:</h1>
+            <p class="font-K2D text-sm md:text-md text-wrap text-center md:text-start">We can talk about <br>posters,collaboration,about...</p>
+        </section>
+        <section class="flex items-center">
+            <form method="post">
+                <section class="text-center md:text-end flex flex-col">
+                    <label class="font-K2D ">Email:</label>
+                    <input type="email" class="p-[5px] outline-none font-K2D rounded-[3px] text-[#000000]" name="Email" required [(ngModel)]="Email">
+                </section>
+                <section class="text-center md:text-end flex flex-col">
+                    <label class="font-K2D ">Message:</label>
+                    <textarea name="message" id="message" class="p-[5px] font-K2D outline-none rounded-[3px] h-[140px] text-[#000000] resize-none" [(ngModel)]="Message" required></textarea>
+                </section>
+                <section class="flex flex-col items-center md:items-end my-[10px] ">
+                    <p class="mb-[5px]">{{ServerMessage}}</p>
+                    <button (click)="SendData()" class="rounded-[3px] p-[5px] text-xl text-white font-K2D border border-[#ffffff] ease-in-out duration-200 hover:scale-110">Send</button>
+                </section>
+            </form>
+        </section>
+
+    </section>
+</main>

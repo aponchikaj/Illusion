@@ -1,0 +1,20 @@
+<main class="w-full flex h-auto bg-[#292929] overflow-x-hidden">
+    <section class="flex flex-col w-full">
+        <section class="p-[10px] m-[20px] w-full flex flex-col items-center md:items-start text-white font-ALK ">
+            <h1 class="justify-center md:justify-start text-[25px] md:text-[30px]">Posters</h1>
+        </section>
+
+        <!-- posterebi -->
+        <section class="flex flex-row justify-center items-center text-start md:items-start md:justify-around flex-wrap p-[20px] ">
+                <section (click)="onSelect(Poster)" *ngFor="let Poster of posters.PostersINFO" class="w-[220px] cursor-pointer md:w-[300px] mx-[30px] my-[10px] transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300">
+                    <section>
+                        <img src="{{Poster.img}}" alt="Pic" class="">
+                    </section>
+                    <section>
+                        <h1 class="text-white font-medium font-glaho">{{Poster.name}}</h1>
+                        <p class="font-glaho text-white">{{Poster.price}} GEL</p>
+                    </section>
+                </section>
+        </section>
+    </section>
+</main>

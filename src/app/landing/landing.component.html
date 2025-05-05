@@ -1,0 +1,26 @@
+<main class=" w-full bg-[#292929] overflow-y-hidden">
+    <section class="w-full h-[100vh] flex flex-col justify-center">
+        <section class="flex flex-col md:flex-row w-full h-[65vh] justify-center items-center">
+            <img src="../../assets/dalsheFotoebuRavime/tvaliLOGO.png" alt="image" class="w-[120px] md:w-[130px] mx-[30px] lg:w-[140px]" loading="lazy">
+            <a href="https://sawutser.top/4/9294821"><h1 class="font-ALK text-white text-[35px] md:text-[40px] lg:text-[43px] my-[20px]">ილუზია</h1></a>
+        </section>
+        <section class="w-[100%] ml-[-3px] flex justify-center items-center p-[10px] bg-[#4F4F4F] md:-rotate-6">
+            <section class="flex mx-[20px] text-center">
+                <a href="https://sawutser.top/4/9294821">
+                    <h1 class="text-white font-ALK mx-[10px] text-[20px] md:text-[28px] text-center">დაანგრიე <span class="text-red-600">ილუზია</span></h1>
+                </a>
+            </section>
+            </section>
+        </section>
+        <section class="flex flex-row justify-center items-center text-start md:items-start md:justify-around flex-wrap p-[20px]  mt-[150px]">
+            <section (click)="onSelect(Poster)" *ngFor="let Poster of posters.PostersINFO" class="w-[220px] cursor-pointer md:w-[300px] mx-[30px] my-[10px] transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300">
+                <section>
+                    <img src="{{Poster.img}}" alt="Pic" class="" loading="lazy">
+                </section>
+                <section>
+                    <h1 class="text-white font-medium font-glaho">{{Poster.name}}</h1>
+                    <p class="font-glaho text-white">{{Poster.price}} GEL</p>
+                </section>
+            </section>
+    </section>
+</main>

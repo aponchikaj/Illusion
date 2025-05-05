@@ -1,0 +1,45 @@
+<nav class="w-[80%] h-[100vh] flex flex-col bg-[#212121] absolute justify-around MenuModeAnim" *ngIf="isMenu">
+  <header class="w-full p-[10px] flex items-center justify-around">
+    <section>
+      <img src="../../assets/dalsheFotoebuRavime/tvaliLOGO.png" alt="img" class="w-[60px]">
+    </section>
+    <section>
+      <button (click)="CloseMenu()"><i class="fa-solid fa-x text-red-500 mx-[10px] text-[20px]"></i></button>
+    </section>
+  </header>
+  <section class="text-center flex flex-col items-center justify-center">
+    <ul class="w-full p-[10px] flex flex-col">
+      <a routerLink="/" class="text-white text-[22px] mx-[10px] font-K2D transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300">Home</a>
+        <a routerLink="Posters" class="text-white text-[21px] mx-[10px] font-K2D transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300">Posters</a>
+        <a routerLink="Contact" class="text-white text-[21px] mx-[10px] font-K2D transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300">About</a>
+    </ul>
+  </section>
+  <footer class="w-full p-[10px] flex items-center justify-center">
+    <p class="text-white text-sm">&copy; Illusion </p>
+  </footer>
+</nav>
+
+<header class="flex p-[10px] md:p-[12px] w-full bg-[#212121] shadow-xl " *ngIf="isNormal">
+    <nav class="flex justify-around w-full items-center ">
+      <section>
+        <img src="../assets/dalsheFotoebuRavime/tvaliLOGO.png" alt="LOGO" class="w-[60px] md:w-[70px] " *ngIf="isNormal">
+      </section>
+      <section class="hidden md:flex">
+        <a routerLink="/" class="text-white text-[22px] mx-[10px] font-K2D transition ease-in-out hover:-translate-y-1 hover:shadow-lg hover:scale-110 hover:text-[#ccc] duration-300">Home</a>
+        <a routerLink="Posters" class="text-white text-[21px] mx-[10px] font-K2D transition ease-in-out hover:shadow-lg hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300">Posters</a>
+        <a routerLink="Contact" class="text-white text-[21px] mx-[10px] font-K2D transition ease-in-out hover:shadow-lg hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300">About</a>
+        <a href="https://www.instagram.com/iluz1a.1/"><i class="fa-brands fa-instagram text-[21px] hover:shadow-lg mt-[7px] mx-[10px] text-white transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300 mx-[1px]"></i></a>
+        <a href="https://discord.gg/afN8vs2XSN"><i class="fa-brands fa-discord text-[21px] mt-[7px] hover:shadow-lg mx-[11px] text-white transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300 mx-[1px]"></i></a>
+      </section>
+  
+      <section class="flex md:hidden" *ngIf="isNormal">
+        <a (click)='openMenu()' class="cursor-pointer"><i class="fa-solid fa-bars text-[35px] text-white"></i></a>
+      </section>
+      <!-- <section *ngIf="isMenu" class="flex md:hidden justify-center mx-auto p-[13px] flex-wrap MenuModeAnim">
+        <a routerLink="/" class="text-white text-[22px] mx-[10px] font-K2D transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300">Home</a>
+        <a routerLink="Posters" class="text-white text-[21px] mx-[10px] font-K2D transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300">Posters</a>
+        <a routerLink="Contact" class="text-white text-[21px] mx-[10px] font-K2D transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300">About</a>
+        <button (click)="CloseMenu()"><i class="fa-solid fa-x text-red-500 mx-[10px] text-[20px]"></i></button>
+      </section> -->
+    </nav>
+  </header>
