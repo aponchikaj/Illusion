@@ -51,7 +51,7 @@ export class PostersService {
       id:8,
       name:"ტექნომაგია",
       price:15,
-      img:'../../assets/Posters/KendrickPoster.webp'
+      img:'../../assets/Posters/teqnomagia.webp'
     },
     {
       id:9,
